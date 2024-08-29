@@ -6,14 +6,19 @@ A CLI version of pirate.based with way more features!
 # Cons
 - ~~Linux only. I will work on a Powershell version soon when I get my VM up and running~~
 - ~~Windows install hasn't been tested yet.~~
-- This PIP package is not yet available on PyPI
+- ~~This PIP package is not yet available on PyPI~~
 - Torrent downloading is not embedded into the program.
 - Currently, there are no API mirror sites, or any that I've heard of
 - Because of the above, no API mirror sites have been tested.
 
 ~~- Python version has no PIP install. Please add it to your system's path~~
+# Install from PyPi
+In your terminal type
 
-# How to install PIP
+`pip install pirate-based`
+
+and it should install and let you use it system wide
+# How to install PIP manually
 - Install or compile python3.10 or later
 - Clone this project and unzip it.
 - Go into /pirate-based/
