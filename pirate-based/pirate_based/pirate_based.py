@@ -5,12 +5,19 @@ import requests
 import json
 import os
 import platform
+import webbrowser
 import urllib.parse
 from datetime import datetime
 
+
+# Define defaults
 proxy = "none"
 server = "https://apibay.org"
 
+# Prepare cross platform terminal coloring
+if platform.system() == "Windows":
+    os.system("")
+# Define code for converting filesize
 def convert_size(size_bytes):
     units = ["B", "KB", "MB", "GB", "TB"]
     size = float(size_bytes)
@@ -89,11 +96,13 @@ def query():
                     yesorno = input("Would you like to attempt to open the torrent link in an application? (Desktop OSes only!) (PLEASE TURN ON YOUR VPN NOW) [Y/N]: ")
                     if yesorno.lower() == "y":
                         if platform.system() == "Windows":
-                            subprocess.Popen(["start", final], shell=True)
+                            webbrowser.open(final)
                         else:
+                            # Found a cross platform way of opening magnets
 
-                            subprocess.Popen(["pkill", "ktorrent"])
-                            subprocess.Popen(["xdg-open", final])
+                            webbrowser.open(final)
+                            # subprocess.Popen(["pkill", "ktorrent"])
+                            # subprocess.Popen(["xdg-open", final])
 
                         input("Press any key to continue browsing for torrents")
                         query()
