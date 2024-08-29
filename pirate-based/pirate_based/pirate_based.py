@@ -5,6 +5,7 @@ import requests
 import json
 import os
 import platform
+import webbrowser
 import sys
 import urllib.parse
 from datetime import datetime
