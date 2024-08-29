@@ -7,3 +7,5 @@ A CLI version of pirate.based with way more features!
 - Torrent downloading is not embedded into the program.
 - Currently, there are no API mirror sites, or any that I've heard of
 - Because of the above, no API mirror sites have been tested.
+
+- Python version has no PIP install. Please add it to your system's path
