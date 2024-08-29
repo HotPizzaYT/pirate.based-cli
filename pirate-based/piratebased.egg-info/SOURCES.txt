@@ -1,0 +1,7 @@
+setup.py
+piratebased.egg-info/PKG-INFO
+piratebased.egg-info/SOURCES.txt
+piratebased.egg-info/dependency_links.txt
+piratebased.egg-info/entry_points.txt
+piratebased.egg-info/requires.txt
+piratebased.egg-info/top_level.txt

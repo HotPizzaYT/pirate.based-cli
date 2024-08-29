@@ -1,0 +1,3 @@
+[console_scripts]
+pirate-based = piratebased.pirate_based:main
+
