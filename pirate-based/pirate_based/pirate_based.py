@@ -5,9 +5,14 @@ import requests
 import json
 import os
 import platform
-import webbrowser
+import sys
 import urllib.parse
 from datetime import datetime
+
+# Register browser on Android
+if hasattr(sys, 'getandroidapilevel'):
+    # Yes, this is Android
+    webbrowser.register("termux-open-url '%s'", None)
 
 
 # Define defaults
